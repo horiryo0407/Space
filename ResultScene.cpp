@@ -13,7 +13,7 @@ void ResultScene::Update()
 {
     
         timer++;
-        if (CheckHitKey(KEY_INPUT_SPACE)) // 3秒経過またはEnterでタイトルへ
+        if (CheckHitKey(KEY_INPUT_SPACE))
         {
             endFlag = true;
         }
