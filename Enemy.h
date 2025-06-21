@@ -17,7 +17,7 @@ class Enemy :
 	float speed_; //“G‚ÌˆÚ“®‘¬“x
 	Point imageSize_; // “G‚Ì‰æ‘œƒTƒCƒY
 	float moveTime_;
-	int fireCount_;
+	
 
 	int ID_; //“G‚ÌID
 	ETYPE type_; //“G‚ÌŽí—Þ
