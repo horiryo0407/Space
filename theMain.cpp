@@ -1,6 +1,6 @@
 #include "DxLib.h"
 #include "globals.h"
-#include "input 1.h"
+#include "Input.h"
 #include <vector>
 #include "Stage.h"
 #include "TitleScene.h"

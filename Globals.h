@@ -31,8 +31,6 @@ struct Rect
 
 enum class SceneType {
 	TITLE,
-	GAME,
-	RESULT,
 	// 必要に応じて追加
 };
 

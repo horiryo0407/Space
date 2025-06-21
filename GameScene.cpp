@@ -39,13 +39,6 @@ void GameScene::Update()
         endFlag = true;
     }
 
-    //for (auto obj : gameObjects) {
-    //    Player* player = dynamic_cast<Player*>(obj);
-    //    if (player && player->IsDead()) {
-    //        endFlag = true;  // ¨ NextScene()‚ÅƒŠƒUƒ‹ƒg‚Ö
-    //        break;
-    //    }
-    //}
     
 }
 

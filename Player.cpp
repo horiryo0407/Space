@@ -1,7 +1,7 @@
 #include "Player.h"
 #include "DxLib.h"
 #include "globals.h"
-#include "Input 1.h"
+#include "Input.h"
 #include "Bullet.h"
 #include "Effect.h"
 #include "EnemyBeam.h"
