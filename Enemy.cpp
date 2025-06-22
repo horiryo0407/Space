@@ -12,7 +12,6 @@ namespace
 	const float ENEMY_INIT_X = 100; // 敵の初期X座標;
 	const float ENEMY_INIT_Y = 100; // 敵の初期Y座標;
 	const float ENEMY_INIT_SPEED = 100.0f; // 敵の初期移動速度;
-	int fireCount_ = 0;
 }
 
 
@@ -77,23 +76,20 @@ Enemy::~Enemy()
 
 void Enemy::Update()
 {
-	static float beamTimer = 15.0f;
+	static float beamTimer = 10.0f;
 	float period = 10.0f; // 1往復にかける時間（秒）
 	float omega = 2.0f * 3.14159265f / period; // 角速度 ω = 2π / T
 	moveTime_ = moveTime_ + GetDeltaTime();
 	x_ = xorigin_ + xMoveMax_ / 2.0 * sinf(omega * moveTime_);
 	y_ = y_;
 
-	if (beamTimer < 0 && fireCount_ < 3) {  // ← 発射上限を3発に
+	if (beamTimer < 0) 
+	{ 
 		new EnemyBeam({ x_ + imageSize_.x / 2, y_ + imageSize_.y });
-		beamTimer = 15.0f;
-		fireCount_++;// カウントアップ
+		beamTimer = 10.0f;
+		
 	}
-	//if (beamTimer < 0)
-	//{
-	//	new EnemyBeam({ x_ + imageSize_.x / 2, y_ + imageSize_.y });
-	//	beamTimer = 3.0f; // ビームの発射間隔をリセット
-	//}
+
 	beamTimer -= GetDeltaTime();
 }
 
